@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Riyad Hossen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Web Title -->
+    <title>Weather Application - Developed by Riyad Hossen</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <!-- Web Icon | RemixIcon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- Assets File | CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Weather App Section Start -->
+    <section class="weather-app-section">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="./assets/video/rain-video.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <div class="weather-content-wrapper">
+                <!-- Search Box -->
+                <div class="search-box">
+                    <i class="ri-map-pin-2-fill"></i>
+                    <input type="text" placeholder="Enter your location...">
+                    <button><span class="search-icon"><i class="ri-search-line"></i></span></button>
+                </div>
+                <!-- Weather Box -->
+                <div class="weather-box">
+                    <div class="info-weather">
+                        <div class="weather">
+                            <img src="./assets/img/cloud.png" alt="Cloud Image">
+                            <p class="temperature">0<span>°C</span></p>
+                            <p class="description">Broken Clouds</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Weather Details -->
+                <div class="weather-details">
+                    <!-- Humidity -->
+                    <div class="humidity">
+                        <i class="ri-contrast-drop-line"></i>
+                        <div class="text">
+                            <div class="info-humidity">
+                                <span>0%</span>
+                            </div>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <!-- Wind -->
+                    <div class="wind">
+                        <i class="ri-windy-line"></i>
+                        <div class="text">
+                            <div class="info-wind">
+                                <span>0Km/h</span>
+                            </div>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Not Found -->
+                <!-- <div class="not-found">
+                    <div class="box">
+                        <img src="./assets/img/404.png" alt="404">
+                        <p> <span class="color-text">Oopps!</span> Location not found.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- Weather App Section End -->
+
+
+
+    <!-- JS File -->
+    <script defer src="./assets/js/app.js"></script>
+</body>
+</html>
